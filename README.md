@@ -12,6 +12,11 @@
 
 ## Violaciones a los Principios SOLID
 
+![img.png](img.png)
+
+*Este es el diagrama de clases sin modificaciones, es para lograr explicar un poco mejor lo que está a continuación.*
+
+
 ### Responsabilidad Única (Single Responsibility Principle - SRP)
 - **ReportGenerator** tiene dos responsabilidades: generar reportes en Excel y en PDF.
     - Se debe dejar por separado en clases distintas.
