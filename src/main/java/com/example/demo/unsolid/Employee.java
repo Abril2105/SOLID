@@ -1,8 +1,8 @@
 package com.example.demo.unsolid;
 
-public class Employee {
+public class Employee implements GeneralEmployee {
 
-    private ReportGenerator reportGenerator;
+    public ReportGenerator reportGenerator;
 
     public Employee(ReportGenerator reportGenerator){
         this.reportGenerator = reportGenerator;
@@ -20,6 +20,7 @@ public class Employee {
         return name;
     }
 
+    @Override
     public String getDepartament() {
         return departament;
     }

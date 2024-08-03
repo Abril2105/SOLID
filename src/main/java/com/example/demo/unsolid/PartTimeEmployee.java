@@ -1,7 +1,14 @@
 package com.example.demo.unsolid;
 
-public class PartTimeEmployee {
-    public String getName() {
-        throw new UnsupportedOperationException();
+public class PartTimeEmployee implements GeneralEmployee {
+    public ReportGenerator reportGenerator;
+
+    public PartTimeEmployee(ReportGenerator reportGenerator) {
+        this.reportGenerator = reportGenerator;
+    }
+
+    @Override
+    public String getDepartament() {
+        return "PartTime";
     }
 }
