@@ -1,7 +1,6 @@
 package com.example.demo.unsolid;
 
-public class PartTimeEmployee extends Employee {
-    @Override
+public class PartTimeEmployee {
     public String getName() {
         throw new UnsupportedOperationException();
     }
